@@ -1,0 +1,57 @@
+@import "const";
+@import "blocks/buttons";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/courses-index-page";
+@import "blocks/dashboard";
+@import "blocks/search";
+@import "blocks/about";
+@import "blocks/course-main";
+@import "blocks/wiki";
+@import "blocks/discussion";
+@import "blocks/instructor";
+@import "blocks/progress";
+@import "blocks/sysadmin";
+@import "blocks/login-register";
+
+
+body {
+	background: $body-bg !important;
+	position: relative;
+	line-height: 1.2;
+}
+
+.holder,
+.wrapper-preview-menu .preview-menu {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+body.view-in-course .instructor-dashboard-wrapper-2,
+body.view-in-course .wiki-wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.content-wrapper {
+	margin: 0 auto;
+	padding: 0;
+	background: #eeeeee;
+}
+
+.view-profile .window-wrap,
+.window-wrap {
+	background: none;
+	position: relative;
+	box-sizing: border-box;
+	@media screen and (min-width: 1200px) {
+		min-height: 100vh;
+		padding-bottom: 270px;
+	}
+}

@@ -1,0 +1,26 @@
+.learn-more {
+	display: block;
+	border: 3px solid #fff !important;
+	background: none !important;
+	line-height: 45px !important;
+	box-sizing: border-box;
+}
+
+.highlighted-courses .courses .course {
+	border-bottom-color: $courses-border-color;
+}
+.highlighted-courses .courses .course:hover {
+	background: none;
+}
+
+.courses-container .courses .course .cover-image:before {
+	transition: all 0.2s ease;
+}
+
+.courses-container .courses .course .course-info .course-title {
+	color: $course-link-color;
+	font-size: 18px;
+	margin: 5px 0;
+	height: 96px;
+	overflow: hidden;
+}

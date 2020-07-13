@@ -1,0 +1,92 @@
+## mako
+<%page expression_filter="h"/>
+<%!
+  #from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+  from branding.api import get_footer
+%>
+<% footer = get_footer(is_secure=is_secure) %>
+<%namespace name='static' file='static_content.html'/>
+
+<div class="wrapper wrapper-footer">
+  <footer id="footer-openedx" class="grid-container"
+    ## When rendering the footer through the branding API,
+    ## the direction may not be set on the parent element,
+    ## so we set it here.
+    % if bidi:
+      dir=${bidi}
+    % endif
+  >
+
+    <div class="smarted-footer">
+      <div class="smarted-footer_footer-left">
+        <a href="/dashboard" class="smarted-footer_logo"><img alt="organization logo" src="/static/${settings.DEFAULT_SITE_THEME}/images/footer-logo.png"></a>
+      <!--<p class="footer-support">
+          <span>Built on</span>
+          <a target="_blank" href="${footer['openedx_link']['url']}">
+            <svg class="svg-edx"  viewBox="0 0 100 70">
+              <use xlink:href="#logo-edx" />
+            </svg>
+          </a>
+          <span>by</span>
+          <a target="_blank" href="http://bunited.mx" class="raccoon__logo">
+            <em>B United</em>
+          </a>
+        </p> -->
+      </div>
+      <div class="smarted-footer_cources-catalog">
+        <strong class="smarted-footer_title">Informaci&oacute;n General</strong>
+        <ul>
+          <li><a href="https://www.nl.gob.mx/iepam">Acerca de</a></li>
+          
+          
+        </ul>
+      </div>
+      <div class="smarted-footer_general-info">
+        <strong class="smarted-footer_title">Plataforma</strong>
+        <ul>
+          <li><a href="/honor">C&oacute;digo de honor</a></li>
+          <!--<li><a href="/tos">T&eacute;rminos de servicio</a></li> -->
+          <li><a href="https://www.nl.gob.mx/sobre-tratamiento-datos-personales">Aviso de privacidad</a></li>
+        </ul>
+      </div>
+      <div class="smarted-footer_footer-right">
+        <strong class="smarted-footer_title">Contacto</strong>
+        <span class="smarted-footer_phone"><em>8127230982 y 8127230979</em></span>
+        <a href="mailto:iepam@nuevoleon.gob.mx" class="smarted-footer_email">iepam@nuevoleon.gob.mx</a>
+        <ul class="icon-list">
+          <li class="icon-list_item"><a href="https://twitter.com/IEPAM1" target="_blank" class="icon-list_link">
+            <svg class="icon-list_svg" viewBox="0 0 35 35">
+              <use xlink:href="#ico-twitter" />
+            </svg>
+          </a>
+          </li>
+          <li class="icon-list_item"><a href="https://www.facebook.com/IEPAMNUEVOLEON/" target="_blank" class="icon-list_link">
+            <svg class="icon-list_svg" viewBox="0 0 35 35">
+              <use xlink:href="#ico-facebook" />
+            </svg></a>
+          </li>
+          <li class="icon-list_item"><a href="https://www.instagram.com/iepam.nl/" target="_blank" class="icon-list_link">
+            <svg class="icon-list_svg" viewBox="0 0 35 35">
+              <use xlink:href="#ico-instagram" />
+            </svg></a>
+          </li>
+        </ul>
+        <span class="smarted-footer_copyright">Centro Educativo Virtual IEPAM © 2020</span>
+        <span class="smarted-footer_copyright">Build on <a target="_blank" href="${footer['openedx_link']['url']}">OPEN edX</a> by <a target="_blank" href="http://bunited.mx" class="raccoon__logo">
+          <em>B United</em></a>
+      </div>
+    </div>
+  </footer>
+</div>
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif

@@ -1,0 +1,47 @@
+<%! from django.utils.translation import ugettext as _ %>
+<%namespace name='static' file='../static_content.html'/>
+<%
+course_mode_class = course_mode if course_mode else ''
+%>
+
+<div class="certificate-wrapper">
+    <img class="main-bg" src="/static/${settings.FEATURES.get('DEMO_KTHPLUS_SITE_THEME', settings.DEFAULT_SITE_THEME)}/images/certificate-bg.svg">
+    <div class="certificate-body">
+        <!--<img class="certificate-logo" src="/static/${settings.FEATURES.get('DEMO_KTHPLUS_SITE_THEME', settings.DEFAULT_SITE_THEME)}/images/cert-logo.png"> -->
+    
+</br> </br> </br>  </br> </br> </br> </br> </br> </br> </br> </br>
+
+
+        <div class="inner">
+            <strong class="user-name">${accomplishment_copy_name}</strong>
+ </br> </br>
+
+            <p class="certificate-text">Por haber concluido satisfactoriamente el curso de:</p>
+            <strong class="course-name">${accomplishment_copy_course_name}</strong> 
+        </div>
+        <div class="certificate-bottom">
+            <!--<div class="date"> -->
+                <!-- <strong>${certificate_date_issued}</strong> 
+                <span>Date</span>-->
+            </div>
+            % if mode != 'base':
+            <div class="signature">
+                % if certificate_data:
+                % for signatory in certificate_data.get('signatories', []):
+                <div class="signature-item">
+                    <strong><img class="signatory-signature" src="${static.url(signatory['signature_image_path'])}" alt="${signatory['name']}"></strong>
+                    <span>${signatory['name']}</span>
+                    <span class="role">${signatory['title']}</span>
+                </div>
+                % endfor
+                % endif
+            </div>
+            % endif
+            
+        </div>
+    
+
+        <span class="certificate-number">Certificate ID Number: ${certificate_id_number}</span>
+    </div>
+</div>
+

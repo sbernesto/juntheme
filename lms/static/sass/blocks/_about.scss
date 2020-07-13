@@ -1,0 +1,26 @@
+.course-info {
+	header.course-profile {
+		padding: 20px 0;
+		height: auto;
+	}
+	.details {
+		* {
+			font-family: "Open Sans";
+		}
+	}
+	.intro-inner-wrapper {
+		border-color: #ccc;
+	}
+	header.course-profile .intro-inner-wrapper .intro .main-cta  {
+		a {
+			display: flex;
+			span.register {
+				padding: 10px !important;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 40px;
+			}
+		}
+	}
+}
