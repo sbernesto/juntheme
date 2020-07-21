@@ -1,216 +1,44 @@
+<%page expression_filter="h"/>
 <%! from django.utils.translation import ugettext as _ %>
 
 <%inherit file="../main.html" />
 
 <%block name="pagetitle">${_("Privacy Policy")}</%block>
 
-<section class="container about">
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Privacy Policy")}</%block>
+        </h1>
+        <p>
 
-<h1>Política de privacidad</h1>
+El presente Política de Privacidad establece los términos en que FADI usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+</p> </br>
 
+<h3>Información que es recogida</h3>
+</br>
+<p>
+Nuestro sitio web podrá recoger información personal, por ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación.
+</p></br>
 
-<p>Fecha efectiva: February 26, 2019</p>
-
-
-<p>Austin Powder Company ("nosotros", "a nosotros", "nuestro") opera el sitio web http://www.austinpowder.com (en adelante, el "Servicio").</p>
-
-<p>Esta página le informa de nuestras políticas en materia de recopilación, uso y divulgación de datos personales cuando utiliza nuestro Servicio y de las opciones de las que dispone en relación con esos datos.</p>
-
-<p>Utilizamos sus datos para prestarle el Servicio y mejorarlo. Al utilizar el Servicio, usted acepta la recopilación y el uso de información de conformidad con esta política. A menos que esta Política de privacidad defina lo contrario, los términos utilizados en ella tienen los mismos significados que nuestros Términos y Condiciones, disponibles en el http://www.austinpowder.com</p>
-
-<h2>Definiciones</h2>
-<ul>
-    <li>
-        <p><strong>Servicio</strong></p>
-                <p>Servicio es el sitio web http://www.austinpowder.com operado por Austin Powder Company</p>
-            </li>
-    <li>
-        <p><strong>Datos personales</strong></p>
-        <p>Datos personales significa los datos sobre una persona física viva que puede ser identificada a partir de esos datos (o con esos datos y otra información de la que dispongamos o probablemente podamos disponer).</p>
-    </li>
-    <li>
-        <p><strong>Datos de uso</strong></p>
-        <p>Datos de uso son los datos recopilados automáticamente, generados por el uso del Servicio o por la propia infraestructura del Servicio (por ejemplo, la duración de la visita a una página).</p>
-    </li>
-    <li>
-        <p><strong>Cookies</strong></p>
-        <p>Las cookies son pequeños archivos ialmacenados en su dispositivo (ordenador o dispositivo móvil).</p>
-    </li>
-        <li>
-        <p><strong>Responsable del tratamiento</strong></p>
-        <p>Responsable del tratamiento significa la persona física o jurídica (de forma individual o conjuntamente con otras personas) que determina las finalidades del tratamiento y la forma en la que se trata o tratará cualquier información personal.</p>
-        <p>A efectos de la presente Política de privacidad, somos Responsables del tratamiento de sus Datos personales.</p>
-    </li>
-    <li>
-        <p><strong>Encargados del tratamiento (o Proveedores de servicios)</strong></p>
-        <p>Encargado del tratamiento (o Proveedor de servicios) significa cualquier persona física o jurídica que trata los datos en nombre del Responsable del tratamiento.</p>
-        <p>Podemos utilizar los servicios de diversos Proveedores de servicios a fin de tratar sus datos de forma más eficaz.</p>
-    </li>
-    <li>
-        <p><strong>Interesado (o Usuario)</strong></p>
-        <p>El Interesado es cualquier persona física viva que utiliza nuestro Servicio y es el sujeto de los Datos personales.</p>
-    </li>
-    </ul>
-
-
-<h2>Recopilación y uso de la información</h2>
-<p>Recopilamos diferentes tipos de información con diversas finalidades para prestarle el
-Servicio y mejorarlo.</p>
-
-<h3>Tipos de datos recopilados</h3>
-
-<h4>Datos personales</h4>
-<p>Cuando utilice nuestro Servicio, es posible que le pidamos que nos proporcione determinada información personalmente identificable que podrá ser utilizada para contactar con usted o para identificarle ("Datos personales"). La información personalmente identificable puede incluir, entre otras, la siguiente:</p>
-
-<ul>
-    <li>Dirección de e-mail</li>    <li>Nombre y apellidos</li>    <li>Número de teléfono</li>    <li>Dirección, localidad, provincia, código postal, ciudad</li>    <li>Cookies y datos de uso</li>
-</ul>
-
-
-<h4>Datos de uso</h4>
-
-<p>También recopilamos información sobre la forma en la que se accede y utiliza el Servicio («Datos de uso»). Estos Datos de uso pueden incluir información como la dirección del protocolo de Internet de su ordenador (por ejemplo, dirección IP), tipo de navegador, versión del navegador, las páginas que visita de nuestro Servicio, la hora y la fecha de su visita, el tiempo que pasa en esas páginas, identificadores exclusivos de dispositivos y otros datos de diagnóstico.</p>
-
-<h4>Datos de localización</h4>
-<p>Podemos utilizar y almacenar información acerca de su localización, si nos autoriza a hacerlo ("Datos de ubicación"). Utilizamos estos datos para ofrecer funciones de nuestro Servicio, para mejorarlo y personalizarlo.</p>
-<p>Usted puede activar o desactivar los servicios de localización cuando utiliza nuestro Servicio en cualquier momento, a través de la configuración de su dispositivo.</p>
-
-<h4>Datos de cookies y seguimiento</h4>
-<p>Utilizamos cookies y tecnologías de seguimiento similares para rastrear la actividad de nuestro Servicio y mantener determinada información.</p>
-<p>Las cookies son archivos con una pequeña cantidad de datos que pueden incluir un identificador exclusivo anónimo. Las cookies son enviadas a su navegador desde un sitio web y se almacenan en su dispositivo. Otras tecnologías de seguimiento también utilizadas son balizas, etiquetas y scripts para recopilar y rastrear la información, así como para mejorar y analizar nuestro Servicio.</p>
-<p>Usted puede ordenar a su navegador que rechace todas las cookies o que le avise cuando se envía una cookie. Sin embargo, si no acepta cookies, es posible que no pueda utilizar algunas partes de nuestro Servicio.</p>
-<p>Ejemplos de Cookies que utilizamos:</p>
-<ul>
-    <li><strong>Cookies de sesión.</strong> Utilizamos Cookies de sesión para operar nuestro Servicio.</li>
-    <li><strong>Cookies de preferencia.</strong> Utilizamos Cookies de preferencia para recordar sus preferencias y diversos ajustes.</li>
-    <li><strong>Cookies de seguridad.</strong> Utilizamos Cookies de seguridad para fines de seguridad.</li>
-    </ul>
-
-<h2>Uso de datos</h2>
-<p>Austin Powder Company utiliza los datos recopilados con diversas finalidades:</p>
-<ul>
-    <li>Suministrar y mantener nuestro Servicio</li>
-    <li>Notificarle cambios en nuestro Servicio</li>
-    <li>Permitirle participar en funciones interactivas de nuestro Servicio cuando decida hacerlo</li>
-    <li>Prestar asistencia al cliente</li>
-    <li>Recopilar análisis o información valiosa que nos permitan mejorar nuestro Servicio</li>
-    <li>Controlar el uso de nuestro Servicio</li>
-    <li>Detectar, evitar y abordar problemas técnicos</li>
-    </ul>
-
-
-<h2>Base legal para el tratamiento de datos personales de conformidad con el Reglamento General de Protección de Datos (RGPD)</h2>
-<p>Si usted se encuentra en el Espacio Económico Europeo (EEE), la base legal de Austin Powder Company para recopilar y utilizar la información personal descrita en esta Política de privacidad depende de los Datos personales que recopilemos y del contexto específico en el que la recopilemos.</p>
-<p>Austin Powder Company puede tratar sus Datos personales por lo siguiente:</p>
-<ul>
-    <li>Ejecutar un contrato con usted</li>
-    <li>Usted nos ha dado permiso para hacerlo</li>
-    <li>El tratamiento favorece a nuestros intereses legítimos y no es contrario a sus derechos</li>
-        <li>Para cumplir la ley</li>
-</ul>
-
-
-<h2>Conservación de los datos</h2>
-<p>Austin Powder Company conservará sus Datos personales únicamente el tiempo necesario para los fines recogidos en esta Política de privacidad. Conservaremos y utilizaremos sus Datos personales en la medida en que resulte necesario para cumplir nuestras obligaciones legales (por ejemplo, si estamos obligados a conservar sus datos para cumplir la legislación aplicable), resolver conflictos y ejecutar nuestras políticas y acuerdos legales.</p>
-<p>Austin Powder Company también conservará los Datos de uso con fines del análisis interno. Por lo general, los Datos de uso se conservan durante menos tiempo, salvo cuando estos datos se utilicen para reforzar la seguridad o para mejorar la funcionalidad de nuestro Servicio, o cuando estemos legalmente obligados a conservar estos datos durante periodos de tiempo más prolongados.</p>
-
-<h2>Transferencia de datos</h2>
-<p>Su información, incluyendo Datos personales, puede ser transferida a —y mantenida en— ordenadores localizados fuera de su estado, provincia, país u otra jurisdicción gubernamental donde las leyes de protección de datos pueden diferir de las de su jurisdicción.</p>
-<p>Si usted se encuentra fuera de United States y decide facilitarnos información, tenga en cuenta que nosotros transferimos los datos, incluyendo Datos personales, a United States y que los tratamos allí.</p>
-<p>Su aceptación de esta Política de privacidad seguida de su envío de esta información representa que está de acuerdo con dicha transferencia.</p>
-<p>Austin Powder Company emprenderá todas las medidas razonables necesarias para garantizar que sus datos sean tratados de forma segura y de conformidad con esta Política de privacidad y no se realizará ninguna transferencia de sus Datos personales a una organización o país, salvo que existan unos controles adecuados establecidos incluyendo la seguridad de sus datos y otra información personal.</p>
-
-<h2>Divulgación de datos</h2>
-
-<h3>Divulgación por obligación legal</h3>
-<p>En determinadas circunstancias, Austin Powder Company puede estar obligada a divulgar sus Datos personales cuando así lo exija la legislación o en respuesta a solicitudes válidas de autoridades públicas (por ejemplo, un tribunal o un organismo público).</p>
-
-<h3>Requisitos legales</h3>
-<p>Austin Powder Company puede divulgar sus Datos personales de buena fe cuando considere que esta acción es necesaria para lo siguiente:</p>
-<ul>
-    <li>Cumplir una obligación legal</li>
-    <li>Proteger y defender los derechos o bienes de Austin Powder Company</li>
-    <li>Prevenir o investigar posibles infracciones en relación con el Servicio</li>
-    <li>Proteger la seguridad personal de usuarios del Servicio o del público</li>
-    <li>Protegerse frente a consecuencias legales</li>
-</ul>
-
-<h2>Seguridad de los datos</h2>
-<p>La seguridad de sus datos es importante para nosotros, pero recuerde que ningún método de transmisión por Internet o método de almacenamiento electrónico resulta 100% seguro. A pesar de que nos esforzamos por utilizar medios comercialmente aceptables para proteger sus Datos personales, no podemos garantizar su seguridad absoluta.</p>
-
-<h2>Señales "No rastrear"</h2>
-<p>No admitimos señales "No rastrear" (en adelante, "DNT"). DNT es una preferencia que puede establecer en su navegador web para informar a los sitios web de que no desea ser objeto de seguimiento.</p>
-<p>Puede activar o desactivar DNT visitando la página de Preferencias o Configuración de su navegador web.</p>
-
-<h2>Sus derechos de protección de datos de conformidad con el Reglamento General de Protección de Datos (RGPD)</h2>
-<p>Si usted reside en el Espacio Económico Europeo (EEE), tiene determinados derechos en materia de protección de datos. Austin Powder Company pretende emprender medidas razonables para que usted pueda corregir, modificar, suprimir o limitar el uso de sus Datos personales.</p>
-<p>Si desea ser informado de los Datos personales que mantenemos sobre usted y si desea ser eliminado de nuestros sistemas, contacte con nosotros.</p>
-<p>En determinadas circunstancias, tiene los siguientes derechos en materia de protección de datos:</p>
-<ul>
-    <li>
-        <p><strong>El derecho a acceder, actualizar o suprimir la información que tenemos sobre usted.</strong> Siempre que sea posible, usted puede acceder, actualizar o solicitar la supresión de sus Datos personales directamente dentro de la sección de configuración de su cuenta. Si no puede realizar estas acciones usted mismo, contacte con nosotros para que le ayudemos.</p>
-    </li>
-    <li>
-        <p><strong>El derecho de rectificación.</strong> Tiene derecho a que su información sea rectificada si esa información es inexacta o incompleta.</p>
-    </li>
-    <li>
-        <p><strong>El derecho de oposición.</strong> Tiene el derecho a oponerse a que tratemos sus Datos personales.</p>
-    </li>
-    <li>
-        <p><strong>El derecho a la limitación.</strong> Tiene derecho a solicitar que limitemos el tratamiento de sus datos personales.</p>
-    </li>
-    <li>
-        <p><strong>El derecho a la portabilidad de los datos.</strong> Tiene derecho a que se le facilite una copia de los datos que mantenemos sobre usted en un formato estructurado, de uso común y lectura mecánica.</p>
-    </li>
-    <li>
-        <p><strong>El derecho a retirar su consentimiento.</strong> Tiene derecho a retirar su consentimiento en cualquier momento cuando Austin Powder Company se haya basado en su consentimiento para tratar sus datos personales.</p>
-    </li>
-</ul>
-<p>Tenga en cuenta que es posible que le pidamos que verifique su identidad antes de responder a estas solicitudes.</p>
-
-<p>Tiene derecho a presentar una reclamación a una autoridad de control en relación con nuestra recopilación y uso de sus Datos personales. Para más información, contacte con su autoridad de control local en el Espacio Económico Europeo (EEE).</p>
-
-<h2>Proveedores de servicios</h2>
-<p>Podemos contratar a personas físicas y jurídicas terceras para facilitar nuestro Servicio ("Proveedores de servicios"), para que presten el Servicio en nuestro nombre, para que suministren servicios relacionados con el Servicio o para que nos ayuden a analizar cómo se utiliza nuestro Servicio.</p>
-<p>Estos terceros tienen acceso a sus Datos personales únicamente para realizar estas tareas en nuestro nombre y están obligados a no divulgarlos ni utilizarlos con ningún otro fin.</p>
-
-<h3>Análisis</h3>
-<p>Podemos utilizar Proveedores de servicios terceros para controlar y analizar el uso de nuestro Servicio.</p>
-<ul>
-        <li>
-        <p><strong>Google Analytics</strong></p>
-        <p>Google Analytics es un servicio de analítica web ofrecido por Google que rastrea e informa del tráfico de los sitios web. Google utiliza los datos recopilados para rastrear y controlar el uso de nuestro Servicio. Estos datos son compartidos con otros servicios de Google. Google puede utilizar los datos recopilados para contextualizar y personalizar los anuncios de su propia red de publicidad.</p>
-        <p>Puede optar por que su actividad en el Servicio no esté disponible para Google Analytics instalando el complemento de inhabilitación para el navegador. Este complemento evita que el JavaScript de Google Analytics (ga.js, analytics.js y dc.js) comparta información con Google Analytics sobre la actividad de las visitas.</p>                <p>Para más información sobre las prácticas de privacidad de Google, visite la página web de Privacidad y Condiciones de Google: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></p>
-    </li>
-                                </ul>
-
-
-
-
-
-
-<h2>Enlaces a otros sitios</h2>
-<p>Nuestro Servicio puede contener enlaces a otros sitios no operados por nosotros. Si hace clic en el enlace de un tercero, será dirigido al sitio de ese tercero. Le recomendamos encarecidamente que revise la Política de privacidad de todos los sitios que visite.</p>
-<p>No tenemos ningún control ni asumimos responsabilidad alguna con respecto al contenido, las políticas o prácticas de privacidad de sitios o servicios de terceros.</p>
-
-
-<h2>Privacidad del menor</h2>
-<p>Nuestro servicio no está dirigido a ningún menor de 18 años (en adelante, "Menor").</p>
-<p>No recopilamos de forma consciente información personalmente identificable de menores de 18 años. Si es usted un padre/madre o tutor y tiene conocimiento de que su hijo nos ha facilitado Datos personales, contacte con nosotros. Si tenemos conocimiento de que hemos recopilado Datos personales de menores sin verificación del consentimiento parental, tomamos medidas para eliminar esa información de nuestros servidores.</p>
-
-
-<h2>Cambios en esta Política de privacidad</h2>
-<p>Podemos actualizar nuestra Política de privacidad periódicamente. Le notificaremos cualquier cambio publicando la nueva Política de privacidad en esta página.</p>
-<p>Le informaremos a través del e-mail y/o de un aviso destacado sobre nuestro Servicio antes de que el cambio entre en vigor y actualizaremos la «fecha efectiva» en la parte superior de esta Política de privacidad.</p>
-<p>Le recomendamos que revise esta Política de privacidad periódicamente para comprobar si se ha introducido algún cambio. Los cambios en esta Política de privacidad entran en vigor cuando se publican en esta página.</p>
-
-
-<h2>Contacte con nosotros</h2>
-<p>Si tiene alguna pregunta sobre esta Política de privacidad, contacte con nosotros: </p>
-<ul>
-            <li>Visitando esta página en nuestro sitio web: https://www.austinpowder.com/unitedstates/contact/</li>
-
-        <li>A través del número de teléfono: +1 (216) 464-2400</li>
-            <li>Por correo: 25800 Science Park Dr., Cleveland, OH 44122, United States</li>
-
-</section>
+<h3>Uso de la información recogida </h3></br>
+<p>
+Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios. Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio.
+FADI está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.
+</p></br>
+<h3>Cookies</h3></br>
+<p>
+Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las webs pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web.
+Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin embargo, las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente, visitas a una web. Usted puede aceptar o negar el uso de cookies, sin embargo, la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios.
+</p></br>
+<h3>Enlaces a Terceros</h3></br><p>
+Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.
+</p></br>
+<h3>Control de su información personal</h3></br><p>
+En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web.  Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico.  En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento.
+Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial.
+FADI Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.
+<p>
+        </p>
+    </section>
+</main>

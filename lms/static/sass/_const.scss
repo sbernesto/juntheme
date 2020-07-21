@@ -1,10 +1,10 @@
 //body background
-$body-bg: #eee;
-$base-color: #6B2565;
+$body-bg: #fff;
+$base-color: #062C74;
 //settings for header
 $header-bg: #fff;
 $header-nav-link-color: $base-color;
-$header-nav-link-color2: #9BAf3C;
+$header-nav-link-color2: $base-color;
 $header-nav-link-color-hover: lighten($header-nav-link-color, 20%);
 $dropdown-menu-link-color: #009be0;
 $dropdown-menu-link-color-hover: lighten($dropdown-menu-link-color, 20%);
@@ -30,34 +30,38 @@ $search-button-border: #fff;
 $search-button-color: #95b2d6;
 $search-height: 55px;
 //settings for footer
-$footer-bg: #6B2565;
+$footer-bg: #062C74;
 $footer-nav-link-color: #fff;
 $footer-nav-link-color-hover: rgba(255, 255, 255, .8);
 $footer-support-text-and-logo: #1a1919;
 $footer-social-link-bg: #fff;
-$footer-social-link-bg-hover: #9BAf3C;
+$footer-social-link-text: #fff;
+$footer-social-link-text-hover: #00ADE5;
+$footer-social-link-bg-hover: #00ADE5;
 //btn
-$theme-btn-bg: #6B2565;
-$theme-btn-border: #6B2565;
-$theme-btn-border-hover: #6B2565;
+$theme-btn-bg: #062C74;
+$theme-btn-border: #062C74;
 $theme-btn-text-color: #fff;
-$theme-btn-bg-hover: none;
+$theme-btn-text-color-hover: #062C74;
+$theme-btn-bg-hover: #fff;
+$theme-btn-border-hover: #062C74;
 $theme-btn-shadow: darken($theme-btn-bg, 20%);
 //btn-white
-$theme-btn-white-bg: #6B2565;
-$theme-btn-white-border: #fff;
+$theme-btn-white-bg: #00ADE5;
+$theme-btn-white-border: #00ADE5;
 $theme-btn-white-text-color: #fff;
-$theme-btn-white-text-color-hover: $base-color;
+$theme-btn-white-text-color-hover: #00ADE5;
 $theme-btn-white-bg-hover: #fff;
+$theme-btn-white-border-hover: #00ADE5;
 // link color
-$theme-link: #009be0;
+$theme-link: #00ADE5;
 $theme-link-hover: lighten($theme-link, 20%);
 //settings for bg content pages
-$theme-content-bg: #eee;
+$theme-content-bg: #fff;
 //settings for input icons
-$theme-input-icon: #009be0;
+$theme-input-icon: #00ADE5;
 //user link color
-$theme-user-link: #009be0;
+$theme-user-link: #00ADE5;
 $theme-user-link-hover: lighten($theme-user-link, 20%);
 //settings fo courses on main page and search
 $courses-border-color: #8b7339;
