@@ -33,13 +33,13 @@
     font-size: 15px !important;
     &:active,
     &:focus {
-        color: $base-color !important;
+        color: $theme-btn-text-color-hover !important;
         background: $theme-btn-bg-hover !important;
     }
     &:focus:hover,
     &:hover {
+        color: $theme-btn-text-color-hover !important;
         background: $theme-btn-bg-hover !important;
-        color: $base-color !important;
     }
 }
 
@@ -52,10 +52,10 @@
 .new-post-btn,
 section.discussion .search-button,
 .course-info .container .wrap-instructor-info .instructor-info-action {
-    border: 3px solid $base-color !important;
+    border: 3px solid $theme-btn-white-border !important;
     border-radius: 40px !important;
     color: $theme-btn-white-text-color !important;
-    background: $base-color !important;
+    background: $theme-btn-white-bg !important;
     line-height: 1.1;
     text-transform: uppercase !important;
     cursor: pointer;
@@ -65,9 +65,9 @@ section.discussion .search-button,
     &:focus,
     &:focus:hover,
     &:hover {
-        background: #fff !important;
-        border: 3px solid $base-color !important;
-        color: $base-color !important;
+        background: $theme-btn-white-bg-hover !important;
+        border: 3px solid $theme-btn-white-border-hover !important;
+        color: $theme-btn-white-text-color-hover !important;
     }
 }
 

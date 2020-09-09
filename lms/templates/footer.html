@@ -1,7 +1,8 @@
 ## mako
 <%page expression_filter="h"/>
 <%!
-  #from django.core.urlresolvers import reverse
+  from django.urls import reverse
+  from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
   from django.utils.translation import ugettext as _
   from branding.api import get_footer
 %>
@@ -21,25 +22,14 @@
     <div class="smarted-footer">
       <div class="smarted-footer_footer-left">
         <a href="/dashboard" class="smarted-footer_logo"><img alt="organization logo" src="/static/${settings.DEFAULT_SITE_THEME}/images/footer-logo.png"></a>
-      <!--<p class="footer-support">
-          <span>Built on</span>
-          <a target="_blank" href="${footer['openedx_link']['url']}">
-            <svg class="svg-edx"  viewBox="0 0 100 70">
-              <use xlink:href="#logo-edx" />
-            </svg>
-          </a>
-          <span>by</span>
-          <a target="_blank" href="http://bunited.mx" class="raccoon__logo">
-            <em>B United</em>
-          </a>
-        </p> -->
+        
       </div>
       <div class="smarted-footer_cources-catalog">
         <strong class="smarted-footer_title">Informaci&oacute;n General</strong>
         <ul>
-          <li><a href="https://www.nl.gob.mx/iepam">Acerca de</a></li>
-          
-          
+          <li><a href="https://icipuebla.com/nosotros/">Acerca de</a></li>
+          <li><a href="https://www.youtube.com/watch?time_continue=23&v=wfRwYN3BhJ0&feature=emb_logo">Oferta Acad&eacute;mica</a></li>
+          <li><a href="https://icipuebla.com/bufete/">Servicios</a></li>
         </ul>
       </div>
       <div class="smarted-footer_general-info">
@@ -47,32 +37,37 @@
         <ul>
           <li><a href="/honor">C&oacute;digo de honor</a></li>
           <!--<li><a href="/tos">T&eacute;rminos de servicio</a></li> -->
-          <li><a href="https://www.nl.gob.mx/sobre-tratamiento-datos-personales">Aviso de privacidad</a></li>
+          <li><a href="https://icipuebla.com/wp-content/uploads/2020/05/PRIVACIDADICI.pdf">Aviso de privacidad</a></li>
         </ul>
       </div>
       <div class="smarted-footer_footer-right">
         <strong class="smarted-footer_title">Contacto</strong>
-        <span class="smarted-footer_phone"><em>8127230982 y 8127230979</em></span>
-        <a href="mailto:iepam@nuevoleon.gob.mx" class="smarted-footer_email">iepam@nuevoleon.gob.mx</a>
+        <span class="smarted-footer_phone"><em>222 234 5664 | 234 5920</em></span>
+        <a href="mailto:contacto@icipuebla.edu.mx" class="smarted-footer_email">contacto@icipuebla.edu.mx</a>
         <ul class="icon-list">
-          <li class="icon-list_item"><a href="https://twitter.com/IEPAM1" target="_blank" class="icon-list_link">
+          <li class="icon-list_item"><a href="https://twitter.com/icipuebla" target="_blank" class="icon-list_link">
             <svg class="icon-list_svg" viewBox="0 0 35 35">
               <use xlink:href="#ico-twitter" />
             </svg>
           </a>
           </li>
-          <li class="icon-list_item"><a href="https://www.facebook.com/IEPAMNUEVOLEON/" target="_blank" class="icon-list_link">
+          <li class="icon-list_item"><a href="https://www.facebook.com/icipue?fref=ts" target="_blank" class="icon-list_link">
             <svg class="icon-list_svg" viewBox="0 0 35 35">
               <use xlink:href="#ico-facebook" />
             </svg></a>
           </li>
-          <li class="icon-list_item"><a href="https://www.instagram.com/iepam.nl/" target="_blank" class="icon-list_link">
+          <li class="icon-list_item"><a href="https://www.youtube.com/channel/UCVzAqGiV72vona9Y2hlpxbQ" target="_blank" class="icon-list_link">
+            <svg class="icon-list_svg" viewBox="0 0 35 35">
+              <use xlink:href="#ico-youtube" />
+            </svg></a>
+          </li>
+          <li class="icon-list_item"><a href="https://www.instagram.com/icipue/" target="_blank" class="icon-list_link">
             <svg class="icon-list_svg" viewBox="0 0 35 35">
               <use xlink:href="#ico-instagram" />
             </svg></a>
           </li>
         </ul>
-        <span class="smarted-footer_copyright">Centro Educativo Virtual IEPAM © 2020</span>
+        <span class="smarted-footer_copyright">ICI Puebla© 2020</span>
         <span class="smarted-footer_copyright">Build on <a target="_blank" href="${footer['openedx_link']['url']}">OPEN edX</a> by <a target="_blank" href="http://bunited.mx" class="raccoon__logo">
           <em>B United</em></a>
       </div>

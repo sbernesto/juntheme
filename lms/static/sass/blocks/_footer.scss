@@ -230,10 +230,10 @@
             text-transform: uppercase;
             margin-bottom: 5px;
             a {
-                color: $footer-social-link-bg !important;
+                color: $footer-social-link-text !important;
                 text-decoration: none;
                 &:hover {
-                    color: #9BAf3C !important;
+                    color: $footer-social-link-text-hover !important;
                 }
             }
         }
@@ -258,11 +258,11 @@
     }
     &_email {
         display: block;
-        color: $footer-social-link-bg !important;
+        color: $footer-social-link-text !important;
         text-decoration: none;
         margin: 0 0 10px 10px;
         &:hover {
-            color: #9BAf3C !important;
+            color: $footer-social-link-text-hover !important;
         }
         @media screen and (max-width: 767px) {
             margin-left: 0;

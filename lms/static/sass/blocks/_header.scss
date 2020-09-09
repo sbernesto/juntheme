@@ -134,12 +134,12 @@
             background: $theme-btn-bg !important;
         }
         &:focus:hover {
-            color: $base-color !important;
+            color: $theme-btn-text-color-hover !important;
             background: $theme-btn-bg-hover !important;
             border: 3px solid $theme-btn-border-hover !important;
         }
         &:hover {
-            color: $base-color !important;
+            color: $theme-btn-text-color-hover !important;
             background: $theme-btn-bg-hover !important;
             border: 3px solid $theme-btn-border-hover !important;
         }
