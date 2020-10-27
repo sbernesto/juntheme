@@ -1,7 +1,7 @@
 //body background
-$body-bg: #fff;
-$base-color:#f07f06;
-$background-color:#fff;
+$body-bg: #eee;
+$base-color:#0075b4;
+$background-color:#eeeeee;
 //settings for header
 $header-bg: #fff;
 $header-nav-link-color: $base-color;
@@ -31,13 +31,13 @@ $search-button-border: #fff;
 $search-button-color: #95b2d6;
 $search-height: 55px;
 //settings for footer
-$footer-bg: #105782;
+$footer-bg: #0075b4;
 $footer-nav-link-color: #fff;
 $footer-nav-link-color-hover: rgba(255, 255, 255, .8);
-$footer-support-text-and-logo: #1a1919;
+$footer-support-text-and-logo: #fff;
 $footer-social-link-bg: #fff;
 $footer-social-link-text: #fff;
-$footer-social-link-text-hover: $base-color;
+$footer-social-link-text-hover: #898989;
 $footer-social-link-bg-hover: $base-color;
 //btn
 $theme-btn-bg: $base-color;
@@ -55,7 +55,7 @@ $theme-btn-white-text-color-hover: $base-color;
 $theme-btn-white-bg-hover: #fff;
 $theme-btn-white-border-hover: $base-color;
 // link color
-$theme-link: #93D5F6;
+$theme-link: #009be0;
 $theme-link-hover: lighten($theme-link, 20%);
 //settings for bg content pages
 $theme-content-bg: #fff;
@@ -76,5 +76,5 @@ $certificate-borders-color: #df8844;
 //our overrides for settings we want to change
 $img-path: "../images" !default;
 $font-path: "../fonts" !default;
-$delete-button: #8b7339;
+$delete-button: red;
 $white: #fff;
