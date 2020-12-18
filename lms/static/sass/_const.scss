@@ -43,9 +43,9 @@ $footer-social-link-bg-hover: #898989;
 $theme-btn-bg: #E00109;
 $theme-btn-border: #E00109;
 $theme-btn-text-color: #fff;
-$theme-btn-text-color-hover: #fff;
-$theme-btn-bg-hover: $base-color;
-$theme-btn-border-hover: #E00109;
+$theme-btn-text-color-hover: $base-color;
+$theme-btn-bg-hover: #fff;
+$theme-btn-border-hover: $base-color;
 $theme-btn-shadow: darken($theme-btn-bg, 20%);
 //btn-white
 $theme-btn-white-bg: $base-color;
