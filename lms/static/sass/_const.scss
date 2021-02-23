@@ -4,11 +4,12 @@ $base-color:#436e64;
 $background-color:#eeeeee;
 //settings for header
 $header-bg: #003b6b;
-$header-nav-link-color: $base-color;
-$header-nav-link-color2: $base-color;
+$header-nav-link-color: #fff;
+$header-nav-link-color2: #fff;
 $header-nav-link-color-hover: lighten($header-nav-link-color, 20%);
 $dropdown-menu-link-color: #009be0;
 $dropdown-menu-link-color-hover: lighten($dropdown-menu-link-color, 20%);
+$course-header: #fff;
 //settings for hamburger
 $hamburger-color: #009be0;
 $hamburger-width: 40px;
