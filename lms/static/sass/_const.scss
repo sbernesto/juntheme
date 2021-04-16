@@ -1,6 +1,6 @@
 //body background
 $body-bg: #eee;
-$base-color:#000;
+$base-color:#0B233F;
 $background-color:#eeeeee;
 //settings for header
 $header-bg: #fff;
@@ -32,21 +32,21 @@ $search-button-border: #fff;
 $search-button-color: #95b2d6;
 $search-height: 55px;
 //settings for footer
-$footer-bg: #000;
+$footer-bg: #0B233F;
 $footer-nav-link-color: #fff;
 $footer-nav-link-color-hover: rgba(255, 255, 255, .8);
 $footer-support-text-and-logo: #fff;
 $footer-social-link-bg: #fff;
 $footer-social-link-text: #fff;
-$footer-social-link-text-hover: #898989;
-$footer-social-link-bg-hover: #898989;
+$footer-social-link-text-hover: #B7D333;
+$footer-social-link-bg-hover: #B7D333;
 //btn
 $theme-btn-bg: $base-color;
-$theme-btn-border: $base-color;
+$theme-btn-border: #B7D333;
 $theme-btn-text-color: #fff;
 $theme-btn-text-color-hover: $base-color;
 $theme-btn-bg-hover: #fff;
-$theme-btn-border-hover: $base-color;
+$theme-btn-border-hover: #B7D333;
 $theme-btn-shadow: darken($theme-btn-bg, 20%);
 //btn-white
 $theme-btn-white-bg: $base-color;
@@ -66,7 +66,7 @@ $theme-input-icon: #93D5F6;
 $theme-user-link: #93D5F6;
 $theme-user-link-hover: lighten($theme-user-link, 20%);
 //settings fo courses on main page and search
-$courses-border-color: $base-color;
+$courses-border-color: #0083C7;
 $course-hover-bg: rgba(0, 0, 0, .5);
 $course-link-color: #000;
 $course-bg: #fff;
