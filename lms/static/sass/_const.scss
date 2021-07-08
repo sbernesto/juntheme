@@ -1,9 +1,9 @@
 //body background
 $body-bg: #eee;
-$base-color:#0B233F;
+$base-color:#004183;                                                            //cambiar
 $background-color:#eeeeee;
 //settings for header
-$header-bg: #fff;
+$header-bg: #fff;                                                               //Cambiar el header
 $header-nav-link-color: #898989;
 $header-nav-link-color2: #898989;
 $header-nav-link-color-hover: lighten($header-nav-link-color, 20%);
@@ -32,21 +32,21 @@ $search-button-border: #fff;
 $search-button-color: #95b2d6;
 $search-height: 55px;
 //settings for footer
-$footer-bg: #0B233F;
-$footer-nav-link-color: #fff;
-$footer-nav-link-color-hover: rgba(255, 255, 255, .8);
+$footer-bg: #e1452c;                                                            //Cambia el fondo
+$footer-nav-link-color: #fff;                                                   //cambia el color del texto
+$footer-nav-link-color-hover: rgba(255, 255, 255, .8);                          //Cambia el color del texto cuando se posiciona el mouse sobre el.
 $footer-support-text-and-logo: #fff;
-$footer-social-link-bg: #fff;
-$footer-social-link-text: #fff;
-$footer-social-link-text-hover: #B7D333;
-$footer-social-link-bg-hover: #B7D333;
+$footer-social-link-bg: #fff;                                                   //Cambia el fondo
+$footer-social-link-text: #fff;                                                 //cambia el color del texto
+$footer-social-link-text-hover: #004183;                                        //Cambia el color del texto cuando se posiciona el mouse sobre el.
+$footer-social-link-bg-hover: #004183;
 //btn
-$theme-btn-bg: $base-color;
-$theme-btn-border: #B7D333;
-$theme-btn-text-color: #fff;
-$theme-btn-text-color-hover: $base-color;
-$theme-btn-bg-hover: #fff;
-$theme-btn-border-hover: #B7D333;
+$theme-btn-bg: #e1452c;                                                       //Cambia el fondo del boton
+$theme-btn-border: #e1452c;                                                     //Cambia el borde de los botones
+$theme-btn-text-color: #fff;                                                    //Cambia el color del texto del boton
+$theme-btn-text-color-hover: #e1452c;                                         //Cambia el color del texto cuando se posiciona el mouse sobre el.
+$theme-btn-bg-hover: #fff;                                                      //Cambia el fondo del boton cuando se posiciona el mouse sobre el.
+$theme-btn-border-hover: #e1452c;                                               //Cambia el borde del boton cuando se posiciona el mouse sobre el.
 $theme-btn-shadow: darken($theme-btn-bg, 20%);
 //btn-white
 $theme-btn-white-bg: $base-color;

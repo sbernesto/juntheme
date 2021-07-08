@@ -1,4 +1,4 @@
-Templete general para la version koa.3
+Templete general para la version Lilac
 
 Plataforma Delfa, probar en preproduccion
 
